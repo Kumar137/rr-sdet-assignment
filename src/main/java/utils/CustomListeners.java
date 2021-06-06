@@ -28,6 +28,10 @@ public class CustomListeners  implements ITestListener, ISuiteListener {
 
     public void onTestFailure(ITestResult arg0) {
 
+        test.log(LogStatus.FAIL, arg0.getName().toUpperCase() + " FAIL");
+        rep.endTest(test);
+        rep.flush();
+
     }
 
     public void onTestSkipped(ITestResult arg0) {

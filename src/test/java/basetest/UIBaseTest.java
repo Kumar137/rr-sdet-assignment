@@ -8,7 +8,7 @@ import utils.Constant;
 import utils.LaunchBrowser;
 import utils.ReportUtil;
 
-public class UIBaseTest extends ReportUtil {
+public class UIBaseTest  {
 
     LaunchBrowser launchBrowser;
     public WebDriver driver;

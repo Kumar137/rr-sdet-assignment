@@ -26,8 +26,9 @@ public class APITestCase {
 
         HashMap<String,String> hmap=new HashMap<String, String>();
         hmap.put("t","Happy Potter");
+        hmap.put("token","");
         Response response=apiUtils.getApiRequest(hmap);
-        if(response.getStatusCode()==200)
+        if(response.getStatusCode()!=200)
         {
             CustomListeners.test.log(LogStatus.INFO,response.prettyPrint());
         }
