@@ -1,0 +1,16 @@
+Part A:-Test Generation and UI Testing
+
+1)The Default value should be automatically set for edges
+2)User should not be allowed to enter -ve value in the edges width
+3)On saving Map properties the nodes and edges are getting disappeared
+4)The Webpage is not showing properly at different UI Resolution
+5)Backend error is coming in case user tries to save the change without edit
+
+Part B:-Open API: Movie Database
+
+1)The API to search by title is not giving the all movies with the name
+2)The Serach By title API is only returning single element
+3)The ID key is missing in the Search by title API
+4)The API is throwing unauthorized
+
+

@@ -1,5 +1,6 @@
 package utils;
 
+import com.relevantcodes.extentreports.LogStatus;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,9 +24,11 @@ public class WebdriverUtils {
         try{
             webDriverWait = new WebDriverWait(driver, 20);
             webDriverWait.until(ExpectedConditions.visibilityOf(element));
+            CustomListeners.test.log(LogStatus.INFO,elementName +" is found");
 
         }catch (Exception e){
 
+            CustomListeners.test.log(LogStatus.INFO,elementName +" is not found");
             throw new NoSuchElementException("Unable to wait for given element :"+elementName,e);
         }
     }
